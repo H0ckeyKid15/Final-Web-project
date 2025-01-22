@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golf Dome</title>
+    <!-- Link to the external stylesheet for applying consistent styles -->
+    <link rel="stylesheet" href="Css/stylesheet.css" />
+    <style>
+      /* Flexbox container for features section - ensures responsive layout */
+      .container {
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Distribute space evenly between elements */
+        flex-wrap: wrap; /* Allow items to wrap in case of small screen size */
+        gap: 20px; /* Add space between the feature elements */
+        padding: 0 20px; /* Add padding inside the container */
+      }
+
+      /* Styling for individual feature boxes */
+      .feature {
+        text-align: center; /* Center the text within each feature box */
+        flex: 1 1 30%; /* Ensure each feature takes 30% of the container width */
+        background-color: white; /* Set a white background for the feature box */
+        border-radius: 8px; /* Round the corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow around the feature box */
+        padding: 20px; /* Add padding inside the feature box */
+        transition: transform 0.3s ease; /* Add smooth transition effect when hovering */
+        min-height: 350px; /* Ensure all feature boxes are at least 350px tall */
+      }
+
+      /* Hover effect for feature cards to add interactivity */
+      .feature:hover {
+        transform: translateY(-10px); /* Move feature card up on hover */
+      }
+
+      /* Image styling to prevent stretching and ensure consistent size */
+      .feature img {
+        max-width: 100%; /* Ensure the image doesn't exceed the container width */
+        height: 200px; /* Set a fixed height for all images */
+        object-fit: cover; /* Ensure image covers the area without stretching */
+        border-radius: 8px; /* Optional: Add rounded corners to images */
+        margin-bottom: 15px; /* Add space below the image */
+      }
+
+      /* Optional styling for headings and text inside feature boxes */
+      .feature h3 {
+        margin-bottom: 10px; /* Add space below the heading */
+      }
+
+      /* Hero section: Large background image with centered content */
+      .hero {
+        text-align: center; /* Center the text in the hero section */
+        background-size: cover; /* Ensure the background image covers the entire section */
+        padding: 60px 20px; /* Add padding around the content */
+        color: white; /* Set text color to white */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section: Contains logo and navigation links -->
+    <header>
+      <div class="container">
+        <h1>Golf Dome</h1>
+        <!-- Navigation Menu with links to other pages -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="hours.html">Hours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section: A large image with intro text for the page -->
+    <section
+      class="hero"
+      style="
+        background-image: url('https://www.thegolfdome.ca/images/slide_golfdome.jpg');
+      "
+      aria-label="Hero Section - Elevate Your Golf Game">
+      <h2 style="text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7)">
+        Elevate Your Golf Game!
+      </h2>
+      <p>
+        Join golfers of all skill levels across Winnipeg and discover your
+        passion for the game.
+      </p>
+      <a href="services.html" class="btn" aria-label="Explore our services"
+        >Explore Services</a
+      >
+    </section>
+
+    <br />
+
+    <!-- Features Section: Showcasing key features of the Golf Dome -->
+    <section>
+      <div class="container">
+        <!-- Each article represents a different feature of the Golf Dome -->
+        <article class="feature">
+          <h3>Professional Training</h3>
+          <p>Learn from seasoned golf instructors with years of experience.</p>
+          <br />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRenBnHzybBUxGfd6RZjyLVd-_JVoP6iwIO3w&s"
+            alt="A golf trainer" />
+        </article>
+        <article class="feature">
+          <h3>State-of-the-Art Facilities</h3>
+          <p>Practice on the best courses and driving ranges.</p>
+          <br />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Og_wpAIZ_9G3Ysjlmw-z4iFPIPhCdGBD3A&s"
+            alt="Golf dome Facilitie" />
+        </article>
+        <article class="feature">
+          <h3>Equipment Provided</h3>
+          <p>Equipment can be provided!</p>
+          <br />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Pyongyang_Golf_Course_%2817317627275%29.jpg"
+            alt="Golf club set"
+            width="200"
+            height="200" />
+        </article>
+      </div>
+      <hr />
+    </section>
+
+    <!-- Social Media Links Section (Instagram and Facebook) -->
+    <section class="instagram">
+      <div class="container">
+        <div>
+          <p>Follow us on Instagram:</p>
+          <a
+            href="https://www.instagram.com/thegolfdome/?hl=en"
+            target="_blank"
+            aria-label="Follow us on Instagram">
+            <img
+              class="social-icon"
+              src="https://static.xx.fbcdn.net/rsrc.php/v4/yx/r/tBxa1IFcTQH.png"
+              alt="Instagram" />
+          </a>
+        </div>
+        <div>
+          <p>Follow us on Facebook:</p>
+          <a
+            href="https://www.facebook.com/people/The-Golf-Dome-Ltd/100064137847841/"
+            target="_blank"
+            aria-label="Follow us on Facebook">
+            <img
+              class="social-icon"
+              src="https://www.thegolfdome.ca/images/facebook.jpg"
+              alt="Facebook" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section: Displays copyright and image sources -->
+    <footer>
+      <div class="container">
+        <!-- Footer with copyright and image source links -->
+        <p>
+          &copy; 2025 Golf Dome. All rights reserved. Based off of the Golf Dome
+          website:
+          <a
+            href="https://www.thegolfdome.ca/"
+            target="_blank"
+            rel="noopener noreferrer">
+            https://www.thegolfdome.ca/
+          </a>
+        </p>
+
+        <!-- Organized Image Source Links -->
+        <!--This likes the socials and gives credit for the images.-->
+        <section class="image-sources">
+          <div class="image-source-category">
+            <h4>Image Sources:</h4>
+            <br />
+            <h4>Social Media Icons:</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://static.xx.fbcdn.net/rsrc.php/v4/yx/r/tBxa1IFcTQH.png"
+                  target="_blank">
+                  Instagram Icon Image
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.thegolfdome.ca/images/facebook.jpg"
+                  target="_blank">
+                  Facebook Icon Image
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="image-source-category">
+            <h4>Golf Dome Images:</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://www.thegolfdome.ca/images/slide_golfdome.jpg"
+                  target="_blank">
+                  Golf Dome Hero Image
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.thegolfdome.ca/images/header-hours.jpg"
+                  target="_blank">
+                  Header Hours Image
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="image-source-category">
+            <h4>Facility & Training Images:</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRenBnHzybBUxGfd6RZjyLVd-_JVoP6iwIO3w&s"
+                  target="_blank">
+                  Professional Training Image
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Og_wpAIZ_9G3Ysjlmw-z4iFPIPhCdGBD3A&s"
+                  target="_blank">
+                  State-of-the-Art Facilities Image
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="image-source-category">
+            <h4>Golf Club Image:</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://upload.wikimedia.org/wikipedia/commons/5/5a/Pyongyang_Golf_Course_%2817317627275%29.jpg"
+                  target="_blank">
+                  Golf Club Image
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

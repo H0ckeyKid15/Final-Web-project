@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Golf Dome services - Private lessons, group training, equipment fitting, and more!" />
+    <title>Our Services - Golf Dome</title>
+    <!-- Linking external CSS file for styles -->
+    <link rel="stylesheet" href="Css/stylesheet.css" />
+    <style>
+      /* Flexbox layout for cards */
+      .member-grid {
+        display: flex; /* Enables flexbox layout */
+        gap: 20px; /* Spacing between items */
+        padding: 20px;
+        flex-wrap: wrap; /* Allows items to wrap onto new lines if the container is too narrow */
+        justify-content: flex-start; /* Aligns items to the start of the container */
+      }
+
+      /* Styling for service sections */
+      .service-section,
+      .service-table {
+        margin: 20px 0; /* Adds spacing above and below sections */
+      }
+
+      /* Modify the table for smaller size */
+      .service-table {
+        width: 80%; /* Reduces the width of the table */
+        margin: 0 auto; /* Centers the table */
+        border-collapse: collapse; /* Removes space between table cells */
+      }
+
+      /* Adjust padding for table cells */
+      .service-table th,
+      .service-table td {
+        padding: 5px; /* Reduces padding for smaller table cells */
+        border: 5px solid #b0b0b0; /* Adds thin borders between cells */
+      }
+
+      /* Table header background color */
+      .service-table th {
+        background-color: #f4f4f4; /* Light gray background for table headers */
+      }
+
+      /* Center-align text in paragraphs and lists */
+      p,
+      ul {
+        text-align: center; /* Centers text within paragraphs and unordered lists */
+      }
+
+      /* Make images smaller but proportionate */
+      img {
+        height: 400px; /* Fixed height for images */
+        width: 100%; /* Makes image width take up the full width of its container */
+        margin: 0 auto; /* Centers the image horizontally */
+        display: block; /* Ensures the image behaves as a block element */
+        opacity: 0.5; /* Sets the opacity to 50% */
+        transition: opacity 0.3s ease; /* Adds a smooth transition for opacity changes */
+      }
+
+      /* Optional: Add hover effect for better interactivity */
+      img:hover {
+        opacity: 1; /* Restores full opacity on hover */
+      }
+
+      /* Header styling */
+      header {
+        position: fixed; /* Fixes the header at the top of the screen */
+        top: 0; /* Positions the header at the very top */
+        left: 0; /* Aligns the header to the left */
+        width: 100%; /* Makes the header stretch the entire width of the page */
+        background-color: #fff; /* White background for the header */
+        z-index: 1000; /* Ensures the header stays on top of other elements */
+        box-shadow: 0 4px 2px -2px gray; /* Adds a subtle shadow below the header */
+      }
+
+      body {
+        padding-top: 80px; /* Adds padding to the top of the body to prevent overlap with the fixed header */
+      }
+
+      /* Add styling to position the heading above the image */
+      .image-heading-wrapper {
+        position: relative; /* Allows positioning of elements within the container */
+      }
+
+      .image-heading-wrapper img {
+        width: 100%; /* Ensures the image covers the full width */
+        height: 400px; /* Fixes the height of the image */
+      }
+
+      /* Styling for h1 text when the image is hovered */
+      .image-heading-wrapper h1 {
+        position: absolute; /* Absolutely positions the heading on top of the image */
+        top: 150px; /* Vertically positions the heading from the top */
+        left: 50%; /* Centers the heading horizontally */
+        transform: translateX(-50%); /* Fine-tunes centering */
+        font-size: 84px; /* Large font size for the heading */
+        color: black; /* Default color is black */
+        transition: color 0.3s ease; /* Adds a smooth transition effect for color change */
+      }
+
+      /* Ensure the text color only changes on image hover */
+      .image-heading-wrapper img:hover + h1 {
+        color: white; /* Changes text color to white only when image is hovered */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <h1>Golf Dome</h1>
+        <!-- Navigation Menu -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="hours.html">Hours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Memberships Section. This section gives information about the diffrent membership types. -->
+      <section class="image-heading-wrapper">
+        <img
+          src="https://cdn.prod.website-files.com/5c729f15fd0819dbaf8e66c6/657dfd56e263ba326247f754_Pebble-Beach.jpg"
+          alt="Pebble beach golf course with text Memberships" />
+        <h1>Memberships</h1>
+        <br />
+        <p>
+          Great value memberships for frequent visitors! Available in gold and
+          silver levels.
+        </p>
+        <h2>Membership Types:</h2>
+        <p>
+          Available in gold and silver levels with practice time restrictions.
+          Choose the plan that fits your needs.
+        </p>
+      </section>
+
+      <!-- Membership Cards Grid This section shows the costs of the diffrent membership types.-->
+      <section>
+        <!-- Grid layout for different membership options -->
+        <div class="member-grid">
+          <article class="menu-card">
+            <h3>Gold Memberships Annual</h3>
+            <ul>
+              <li><b>Gold Single:</b> - $749.00</li>
+              <li><b>Gold Couple:</b> - $1129.00</li>
+              <li><b>Gold Family:</b> - $1599.00</li>
+              <li><b>Gold Junior:</b> - $399.00</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <h3>Silver Memberships Annual</h3>
+            <ul>
+              <li><b>Silver Single:</b> - $599.00</li>
+              <li><b>Silver Couple:</b> - $899.00</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <h3>Gold Winter Memberships</h3>
+            <ul>
+              <li><b>Gold Single:</b> - $649.00</li>
+              <li><b>Gold Couple:</b> - $979.00</li>
+              <li><b>Gold Family:</b> - $1399.00</li>
+              <li><b>Gold Junior:</b> - $349.00</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <h3>Silver Winter Memberships</h3>
+            <ul>
+              <li><b>Silver Single:</b> - $499.00</li>
+              <li><b>Silver Couple:</b> - $769.00</li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <h3>Summer Membership</h3>
+            <ul>
+              <li><b>Gold Single:</b> - $269.00</li>
+              <li><b>Gold Couple:</b> - $399.00</li>
+              <li><b>Gold Family:</b> - $599.00</li>
+              <li><b>Gold Junior:</b> - $169.00</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <hr />
+
+      <!-- Golf Lessons Section. This section gives info about the lesson rates and the time of them. -->
+      <section class="image-heading-wrapper">
+        <img
+          src="https://ygt-res.cloudinary.com/image/upload/c_fit,h_480,q_80,w_720/v1634808956/Venues/Parkstone%20Golf%20Club/Parkstone-Golf-Club-01st-1140_ahxuob.jpg"
+          alt="Golf course with text golf lessons" />
+        <h1>Golf Lessons</h1>
+        <br />
+        <p>
+          Professional golf lessons tailored to your needs, whether you're a
+          beginner or experienced player.
+        </p>
+        <ul>
+          <!-- List of available lesson features -->
+          <li>One-on-one lessons</li>
+          <li>25-minute sessions</li>
+          <li>Multiple lesson discounts</li>
+        </ul>
+        <h2>Golf Lesson Rates</h2>
+        <table class="service-table">
+          <thead>
+            <tr>
+              <th>Member Rates</th>
+              <th>Non-Member Rates</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table listing lesson prices -->
+            <tr>
+              <td>1 Lesson: $40.00</td>
+              <td>1 Lesson: $45.00</td>
+            </tr>
+            <tr>
+              <td>3 Lessons: $115.00</td>
+              <td>3 Lessons: $125.00</td>
+            </tr>
+            <tr>
+              <td>6 Lessons: $220.00</td>
+              <td>6 Lessons: $240.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>* Multiple lesson packages can be shared.</p>
+      </section>
+      <hr />
+
+      <!-- Prepaid Range Minute Cards Section. This section has info about the minute cards and also gives the prices for them. -->
+      <section class="image-heading-wrapper">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Golf course with text Prepaid Range Minute Cards" />
+        <h1>Prepaid Range Minute Cards</h1>
+        <br />
+        <p>
+          Perfect for occasional visitors. Share these cards with others and
+          save on practice time.
+        </p>
+        <table class="service-table">
+          <thead>
+            <tr>
+              <th>Prepaid Range Minute Card</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table listing prepaid range card prices -->
+            <tr>
+              <td>180 Minutes of Practice Time</td>
+              <td>$89.00 plus GST</td>
+            </tr>
+            <tr>
+              <td>300 Minutes of Practice Time</td>
+              <td>$129.00 plus GST</td>
+            </tr>
+            <tr>
+              <td>600 Minutes of Practice Time</td>
+              <td>$239.00 plus GST</td>
+            </tr>
+            <tr>
+              <td>900 Minutes of Practice Time</td>
+              <td>$339.00 plus GST</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+      <section class="image-heading-wrapper">
+        <img
+          src="https://live.staticflickr.com/7628/16575319887_e89a91e198_b.jpg"
+          alt="Golf course with text Gift Certificates" />
+        <!-- Gift Card Section. Shows the prices of the gift cards and tells you that you can use them on anything -->
+        <h1>Gift Certificates</h1>
+        <br />
+        <h2>
+          Need a quick gift idea? How about a gift card? Useable for anything at
+          the dome!
+        </h2>
+        <!-- Listing gift card prices -->
+        <p>
+          $10 Gift Card - $10.00 <br />
+          $20 Gift Card - $20.00 <br />
+          $25 Gift Card - $25.00 <br />
+          $40 Gift Card - $40.00 <br />
+          $50 Gift Card - $50.00 <br />
+          $75 Gift Card - $75.00 <br />
+          $100 Gift Card - $100.00 <br />
+          $150 Gift Card - $150.00 <br />
+          $200 Gift Card - $200.00
+        </p>
+        <hr />
+      </section>
+      <!-- Field Rentals Section. Gives info about the rentel space and the costs. -->
+      <section class="image-heading-wrapper">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOh5-8HxB7IbNQL0e6bJHTr05RoyYfgRNbzw&s"
+          alt="A feild" />
+        <h1>Field Rentals</h1>
+        <br />
+        <p>
+          Perfect for team practices, games, and events. Over 52,000 sq ft of
+          synthetic grass.
+        </p>
+        <ul>
+          <!-- List of sports available for field rental -->
+          <li>Soccer, Football, Baseball, Rugby, and more</li>
+          <li>Flexible rental options for large or small events</li>
+        </ul>
+        <h2>Rates</h2>
+        <table class="service-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table listing field rental rates -->
+            <tr>
+              <td>1st Hour</td>
+              <td>$200 plus GST</td>
+            </tr>
+            <tr>
+              <td>2nd Hour</td>
+              <td>$175 plus GST</td>
+            </tr>
+            <tr>
+              <td>3rd Hour</td>
+              <td>$150 plus GST</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <hr />
+    <!--This likes the socials and gives credit for the images.-->
+    <section class="instagram">
+      <div class="container">
+        <div>
+          <p>Follow us on Instagram:</p>
+          <a
+            href="https://www.instagram.com/thegolfdome/?hl=en"
+            target="_blank">
+            <img
+              class="social-icon"
+              src="https://static.xx.fbcdn.net/rsrc.php/v4/yx/r/tBxa1IFcTQH.png"
+              alt="Instagram" />
+          </a>
+        </div>
+        <div>
+          <p>Follow us on Facebook:</p>
+          <a
+            href="https://www.facebook.com/people/The-Golf-Dome-Ltd/100064137847841/"
+            target="_blank">
+            <img
+              class="social-icon"
+              src="https://www.thegolfdome.ca/images/facebook.jpg"
+              alt="Facebook" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Golf Dome. All rights reserved. Based off of the Golf Dome
+          website:
+          <a
+            href="https://www.thegolfdome.ca/"
+            target="_blank"
+            rel="noopener noreferrer">
+            https://www.thegolfdome.ca/
+          </a>
+        </p>
+        <p>Image Sources:</p>
+        <ul>
+          <li>
+            <a
+              href="https://cdn.prod.website-files.com/5c729f15fd0819dbaf8e66c6/657dfd56e263ba326247f754_Pebble-Beach.jpg"
+              target="_blank"
+              >Pebble Beach Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ygt-res.cloudinary.com/image/upload/c_fit,h_480,q_80,w_720/v1634808956/Venues/Parkstone%20Golf%20Club/Parkstone-Golf-Club-01st-1140_ahxuob.jpg"
+              target="_blank"
+              >Parkstone Golf Club Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="data:image/jpeg;base64,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"
+              target="_blank"
+              >Rawpixel Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://live.staticflickr.com/7628/16575319887_e89a91e198_b.jpg"
+              target="_blank"
+              >Flickr Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOh5-8HxB7IbNQL0e6bJHTr05RoyYfgRNbzw&s"
+              target="_blank"
+              >Google Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://static.xx.fbcdn.net/rsrc.php/v4/yx/r/tBxa1IFcTQH.png"
+              target="_blank"
+              >Instagram Icon Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.thegolfdome.ca/images/facebook.jpg"
+              target="_blank"
+              >Facebook Icon Image</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

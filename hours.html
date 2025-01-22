@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hours of Operation - Golf Dome</title>
+    <link rel="stylesheet" href="Css/stylesheet.css" />
+    <style>
+      /* Internal CSS for Hours Page */
+
+      /* Styling for header, giving it a dark background color */
+      header {
+        background-color: #34495e;
+        padding: 10px 0;
+      }
+
+      /* Header text styling */
+      header h1 {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      /* Styling for sections, adding margin around them */
+      section {
+        margin: 30px 0;
+      }
+
+      /* Table styling */
+      table {
+        width: 100%; /* Ensures all tables have the same width */
+        border-collapse: collapse; /* Removes spacing between table cells */
+        margin: 20px 0;
+      }
+
+      /* Table header styling */
+      table th,
+      table td {
+        padding: 12px; /* Adds space within table cells */
+        text-align: center; /* Centers the text */
+        border: 10px solid #d9d9d9; /* Adds a thick border around each cell */
+      }
+
+      /* Table header background color and text color */
+      table th {
+        background-color: #2c3e50;
+        color: white;
+        font-size: 1.2rem; /* Adjust font size for the header */
+      }
+
+      /* Table data cell background color */
+      table td {
+        background-color: #f4f4f4;
+      }
+
+      /* Alternating row colors for easier readability */
+      table tr:nth-child(even) td {
+        background-color: #ecf0f1;
+      }
+
+      /* Styling for horizontal rule (line separator) */
+      hr {
+        border: 0; /* Remove default border */
+        height: 5px; /* Set the height to 5px */
+        background-color: black; /* Set the background color to black */
+        margin: 20px 0; /* Adds margin above and below the rule */
+        width: 100%; /* Ensure it spans the full width */
+        margin-left: 0; /* Align to the left */
+        margin-right: 0; /* Align to the right */
+      }
+
+      /* Accessibility: Adjust font size for better readability */
+      body {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      /* Responsive Design for smaller screens (e.g., mobile) */
+      @media (max-width: 768px) {
+        /* Decrease font size for table headers and data cells */
+        table th,
+        table td {
+          font-size: 14px;
+        }
+
+        /* Adjust header text size on smaller screens */
+        header h1 {
+          font-size: 1.5rem;
+        }
+      }
+
+      /* Image styling to ensure full width and proper aspect ratio */
+      img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <h1>Golf Dome</h1>
+        <!-- Navigation Menu -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="hours.html">Hours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Image displaying the header for the hours page -->
+    <img
+      src="https://www.thegolfdome.ca/images/header-hours.jpg"
+      alt="Golf course with text that says Hours" />
+    <hr />
+
+    <main>
+      <!-- Main content section for displaying hours -->
+      <section>
+        <h2>Golf Dome Hours of Operation</h2>
+        <div class="container">
+          <!-- Table displaying standard hours of operation for different services -->
+          <table>
+            <tr>
+              <th>Service</th>
+              <th>Summer Hours (May 1 - October 31)</th>
+              <th>Winter Hours (November 1 - April 30)</th>
+            </tr>
+            <tr>
+              <td>Driving Range</td>
+              <td>Daily: 9:00 AM - 10:00 PM</td>
+              <td>
+                Monday - Friday: 9:00 AM - 10:00 PM <br />
+                Saturday/Sunday: 9:00 AM - 10:00 PM
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <!-- Important note about potential delay in opening time -->
+                <h3>
+                  **Range may not open until 9:15 AM if there is a field rental.
+                  Please call 204-489-7776 for details.
+                </h3>
+              </td>
+            </tr>
+            <tr>
+              <td>Mini Golf</td>
+              <td>Daily: 9:00 AM - 10:00 PM</td>
+              <td>Daily: 9:00 AM - 10:00 PM</td>
+            </tr>
+            <tr>
+              <td>Virtual Golf</td>
+              <td>Daily: 9:00 AM - 10:00 PM</td>
+              <td>Daily: 9:00 AM - 10:00 PM</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <!-- Additional note about mini golf and virtual golf being open until midnight if necessary -->
+                <h3>
+                  *Mini golf and virtual golf may remain open until midnight if
+                  a field rental is in progress. Please call 204-489-7776 for
+                  further details.
+                </h3>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Section for holiday-specific hours -->
+      <section>
+        <h2>Holiday Hours</h2>
+        <div class="container">
+          <!-- Table displaying holiday hours -->
+          <table>
+            <thead>
+              <tr>
+                <th>Holiday</th>
+                <th>Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Good Friday / Easter Sunday</td>
+                <td>9:00 AM - 10:00 PM</td>
+              </tr>
+              <tr>
+                <td>Remembrance Day (November 11)</td>
+                <td>1:00 PM - 10:00 PM</td>
+              </tr>
+              <tr>
+                <td>Christmas Eve (December 24)</td>
+                <td>9:00 AM - 5:00 PM</td>
+              </tr>
+              <tr>
+                <td>Christmas Day (December 25)</td>
+                <td>CLOSED</td>
+              </tr>
+              <tr>
+                <td>Boxing Day (December 26)</td>
+                <td>9:00 AM - 10:00 PM</td>
+              </tr>
+              <tr>
+                <td>New Year's Eve (December 31)</td>
+                <td>9:00 AM - 5:00 PM</td>
+              </tr>
+              <tr>
+                <td>New Year's Day (January 1)</td>
+                <td>10:00 AM - 10:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- General statement about regular hours during other holidays -->
+      <h3>OPEN REGULAR HOURS ON ALL OTHER STATUTORY HOLIDAYS</h3>
+
+      <hr />
+
+      <!-- Section displaying field rental hours -->
+      <section>
+        <h2>Field Rental Hours:</h2>
+        <div class="container">
+          <!-- Table displaying field rental hours for different days -->
+          <table>
+            <tr>
+              <th>Day</th>
+              <th>Hours</th>
+            </tr>
+            <tr>
+              <td>Monday - Friday</td>
+              <td>6:00 AM - 8:45 AM, 10:30 PM - 1:30 AM</td>
+            </tr>
+            <tr>
+              <td>Saturday / Sunday / Holidays</td>
+              <td>6:00 AM - 9:00 AM, 10:30 PM - 1:30 AM</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+    <!--This likes the socials and gives credit for the images.-->
+    <section class="instagram">
+      <div class="container">
+        <!-- Links to social media accounts for Instagram and Facebook -->
+        <div>
+          <p>Follow us on Instagram:</p>
+          <a
+            href="https://www.instagram.com/thegolfdome/?hl=en"
+            target="_blank">
+            <img
+              class="social-icon"
+              src="https://static.xx.fbcdn.net/rsrc.php/v4/yx/r/tBxa1IFcTQH.png"
+              alt="Instagram" />
+          </a>
+        </div>
+        <div>
+          <p>Follow us on Facebook:</p>
+          <a
+            href="https://www.facebook.com/people/The-Golf-Dome-Ltd/100064137847841/"
+            target="_blank">
+            <img
+              class="social-icon"
+              src="https://www.thegolfdome.ca/images/facebook.jpg"
+              alt="Facebook" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <!-- Footer with copyright and image source links -->
+        <p>
+          &copy; 2025 Golf Dome. All rights reserved. Based off of the Golf Dome
+          website:
+          <a
+            href="https://www.thegolfdome.ca/"
+            target="_blank"
+            rel="noopener noreferrer">
+            https://www.thegolfdome.ca/
+          </a>
+        </p>
+        <p>Image Sources:</p>
+        <ul>
+          <li>
+            <a
+              href="https://static.xx.fbcdn.net/rsrc.php/v4/yx/r/tBxa1IFcTQH.png"
+              target="_blank"
+              >Instagram Icon Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.thegolfdome.ca/images/facebook.jpg"
+              target="_blank"
+              >Facebook Icon Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.thegolfdome.ca/images/header-hours.jpg"
+              target="_blank"
+              >Header Hours Image</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

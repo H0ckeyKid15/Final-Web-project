@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Golf Dome</title>
+    <link rel="stylesheet" href="Css/stylesheet.css" />
+    <style>
+      /* Centered text for headings */
+      .centered-text {
+        text-align: center;
+        margin: 0;
+      }
+
+      .centered-text h1 {
+        margin-bottom: 10px;
+      }
+
+      /* Contact Page Styling */
+      .contact-info h3,
+      .address h3,
+      .staff-contacts h3 {
+        font-size: 1.8rem; /* Larger heading font size */
+        margin-bottom: 25px; /* Spacing below headings */
+        color: #1b5e20; /* Green color for headings */
+      }
+
+      .contact-info p,
+      .address p,
+      .staff-contacts ul {
+        font-size: 1rem; /* Standard font size */
+        color: #666; /* Dark gray text color */
+        margin-bottom: 20px; /* Spacing between elements */
+      }
+
+      /* Links styling within contact sections */
+      .contact-info p a,
+      .staff-contacts li a {
+        color: #1b5e20; /* Green color for links */
+        text-decoration: none; /* Removes underline from links */
+      }
+
+      /* Hover effect for links */
+      .contact-info p a:hover,
+      .staff-contacts li a:hover {
+        color: #43a047; /* Change color when hovered */
+      }
+
+      .contact {
+        background-color: #f9f9f9; /* Light background color */
+        padding: 50px 0; /* Vertical padding */
+        color: #333; /* Dark text color */
+      }
+
+      /* Main contact section heading */
+      .contact h2 {
+        text-align: center;
+        font-size: 2.5rem; /* Larger font size for headings */
+        margin-bottom: 30px; /* Spacing below headings */
+        color: #1b5e20; /* Green color for heading */
+      }
+
+      /* General paragraph styling within the contact section */
+      .contact p {
+        text-align: center;
+        font-size: 1.2rem; /* Slightly larger font size */
+        margin-bottom: 50px; /* Spacing below paragraphs */
+        color: #666; /* Gray text */
+      }
+
+      /* Flexbox layout for section content */
+      .contact .container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        gap: 40px; /* Space between items */
+      }
+
+      /* Contact info, address, staff contacts, and form styling */
+      .contact-info,
+      .address,
+      .staff-contacts,
+      .contact-form {
+        background-color: #fff; /* White background for sections */
+        border-radius: 8px; /* Rounded corners for sections */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        padding: 30px; /* Padding inside each section */
+        margin-bottom: 40px; /* Bottom margin between sections */
+        width: 80%; /* Uniform width for all sections */
+        max-width: 600px; /* Maximum width to prevent excessive stretching */
+        margin-left: auto; /* Center-align sections */
+        margin-right: auto; /* Center-align sections */
+      }
+
+      /* Narrower width for contact form */
+      .contact-form {
+        width: 60%; /* Form is narrower than other sections */
+      }
+
+      /* Styling for input fields and text areas */
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%; /* Full width for input fields */
+        padding: 12px; /* Padding inside fields */
+        margin: 10px 0; /* Spacing between fields */
+        border: 1px solid #ccc; /* Light gray border */
+        border-radius: 5px; /* Rounded corners for input fields */
+        font-size: 1rem; /* Standard font size for text */
+      }
+
+      /* Styling for the submit button */
+      .contact-form button {
+        background-color: #1b5e20; /* Green background for button */
+        color: white; /* White text on button */
+        padding: 15px 30px; /* Button padding */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Rounded button corners */
+        font-size: 1.2rem; /* Larger font size */
+        cursor: pointer; /* Pointer cursor on hover */
+      }
+
+      /* Hover effect for the submit button */
+      .contact-form button:hover {
+        background-color: #43a047; /* Change color on hover */
+      }
+
+      /* Label styling */
+      .contact-form label {
+        font-size: 1.1rem; /* Slightly larger font size for labels */
+        color: #333; /* Dark color for text labels */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <h1>Golf Dome</h1>
+        <!-- Navigation Menu -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="hours.html">Hours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact">
+        <div class="container">
+          <!-- Heading and description for contact page -->
+          <div class="centered-text">
+            <h1>Get in Touch</h1>
+            <p>
+              We would love to hear from you! If you have any questions or need
+              assistance, please don't hesitate to reach out to us.
+            </p>
+          </div>
+
+          <!-- General Inquiries section with contact info -->
+          <article class="contact-info">
+            <h2>General Inquiries</h2>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:info@golfdome.com">info@golfdome.com</a>
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+12044897776">(204) 489-7776</a>
+            </p>
+          </article>
+
+          <!-- Address section with Golf Dome location -->
+          <article class="address">
+            <h2>Our Location</h2>
+            <p><strong>Golf Dome</strong></p>
+            <p>1205 Wilkes Avenue, Winnipeg, MB R3P 1B9</p>
+          </article>
+
+          <!-- Staff Contacts section listing key personnel -->
+          <article class="staff-contacts">
+            <h2>Contact Our Staff</h2>
+            <ul>
+              <li>
+                <strong>Kristin Cantwell</strong> - Customer Service Manager
+                <br />
+                <a href="mailto:customerservice@golfdome.ca"
+                  >customerservice@golfdome.ca</a
+                >
+              </li>
+              <li>
+                <strong>Janet Robertson, C.A.</strong> - President,
+                Administration and Finance <br />
+                <a href="mailto:jrobertson@golfdome.ca"
+                  >jrobertson@golfdome.ca</a
+                >
+              </li>
+              <li>
+                <strong>Heather Gray</strong> - Vice-President <br />
+                <a href="mailto:hgray@golfdome.ca">hgray@golfdome.ca</a>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Contact Form section for user submissions -->
+          <article class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="POST">
+              <!-- Form fields for name, email, and message -->
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">Your Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </article>
+        </div>
+      </section>
+    </main>
+    <hr />
+
+    <!-- Social Media Section -->
+    <!--This likes the socials and gives credit for the images.-->
+    <section class="instagram">
+      <div class="container">
+        <div>
+          <p>Follow us on Instagram:</p>
+          <a
+            href="https://www.instagram.com/thegolfdome/?hl=en"
+            target="_blank">
+            <img
+              class="social-icon"
+              src="https://static.xx.fbcdn.net/rsrc.php/v4/yx/r/tBxa1IFcTQH.png"
+              alt="Instagram" />
+          </a>
+        </div>
+        <div>
+          <p>Follow us on Facebook:</p>
+          <a
+            href="https://www.facebook.com/people/The-Golf-Dome-Ltd/100064137847841/"
+            target="_blank">
+            <img
+              class="social-icon"
+              src="https://www.thegolfdome.ca/images/facebook.jpg"
+              alt="Facebook" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Golf Dome. All rights reserved. Based off of the Golf Dome
+          website:
+          <a
+            href="https://www.thegolfdome.ca/"
+            target="_blank"
+            rel="noopener noreferrer">
+            https://www.thegolfdome.ca/
+          </a>
+        </p>
+        <p>Image Sources:</p>
+        <ul>
+          <li>
+            <a
+              href="https://static.xx.fbcdn.net/rsrc.php/v4/yx/r/tBxa1IFcTQH.png"
+              target="_blank"
+              >Instagram Icon Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.thegolfdome.ca/images/facebook.jpg"
+              target="_blank"
+              >Facebook Icon Image</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

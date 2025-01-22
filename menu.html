@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About Golf Dome - Learn more about our mission and operating hours." />
+    <title>Men - Golf Dome</title>
+    <link rel="stylesheet" href="Css/stylesheet.css" />
+    <style>
+      /* Styling for section padding */
+      section {
+        padding: 20px; /* Add padding around sections to ensure content is not touching the edges */
+      }
+
+      /* Grid layout for menu items */
+      #meals {
+        grid-area: 1 / 1 / span 1 / span 2; /* This ensures the meals section spans 2 columns */
+      }
+
+      #appetizers {
+        grid-area: 1 / 4 / span 1 / span 2; /* The appetizers will span 2 columns on the grid */
+      }
+
+      #side {
+        grid-area: 1 / 3 / span 1 / span 1; /* The side section takes up 1 column */
+      }
+
+      /* Styling for the category headings of each food section */
+      .foodsectioncatagorie {
+        font-size: 36px; /* Larger text for section titles */
+        color: rgba(
+          116,
+          1,
+          1,
+          0.671
+        ); /* Set a specific red color for section titles */
+      }
+
+      /* Styling for the burger section background */
+      .burger {
+        text-align: center; /* Center align the content inside this section */
+        padding: 10rem 0; /* Add padding to the top and bottom */
+        background: url("golf_course.jpg") no-repeat bottom center/cover; /* Use background image for section */
+        color: rgb(0, 0, 0); /* Set text color to black */
+      }
+
+      /* Grid container for menu cards */
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+        gap: 20px;
+      }
+
+      /* Styling for each menu card */
+      .menu-card {
+        background: #f4f4f4;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Mobile responsiveness for grid layout */
+      @media (max-width: 768px) {
+        .menu-grid {
+          grid-template-columns: 1fr; /* Stack the cards in a single column on small screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <h1>Golf Dome</h1>
+        <!-- Navigation Menu -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="hours.html">Hours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Burger Section: Background set to an image and content inside centered -->
+    <section
+      class="burger"
+      style="
+        background-image: url('https://images.pexels.com/photos/1556688/pexels-photo-1556688.jpeg');
+        background-position: bottom -220px center;
+      ">
+      <!-- Burger Section Content (if any) could go here -->
+    </section>
+
+    <hr />
+
+    <section>
+      <h1>Drink & Food Menu</h1>
+      <div class="menu-grid">
+        <!-- Menu card for Hot Drinks -->
+        <article class="menu-card">
+          <h2 class="foodsectioncatagorie">Hot Drinks</h2>
+          <ul>
+            <li><b>Coffee</b> - Regular or Decaf: Small $1.34, Large $1.56</li>
+            <li><b>Tea</b> - $1.34</li>
+            <li><b>Mocha</b> - Small $1.56, Large $2.01</li>
+            <li><b>Hot Chocolate</b> - Small $1.56, Large $2.01</li>
+            <li><b>Cappuccino</b> - Small $1.79, Large $2.23</li>
+          </ul>
+        </article>
+
+        <!-- Menu card for Cold Beverages -->
+        <article class="menu-card">
+          <h2 class="foodsectioncatagorie">Cold Beverages</h2>
+          <ul>
+            <li><b>Canned Pop</b> - $1.34</li>
+            <li><b>Bottled Water</b> - $1.34</li>
+            <li><b>Slush Puppy</b> - Small $1.34, Medium $2.01, Large $2.68</li>
+            <li><b>Gatorade</b> - $2.46</li>
+            <li><b>Red Bull</b> - $2.90</li>
+          </ul>
+        </article>
+
+        <!-- Menu card for Alcoholic Beverages -->
+        <article class="menu-card">
+          <h2 class="foodsectioncatagorie">Alcoholic Beverages</h2>
+          <ul>
+            <li><b>Canned Beer</b> - $5.58</li>
+            <li><b>Spirits</b> - $5.58</li>
+            <li><b>Coolers</b> - $6.03</li>
+            <li><b>Mike's Hard</b> - $6.03</li>
+            <li><b>Mott's Clamato Caesars</b> - $6.03</li>
+          </ul>
+        </article>
+
+        <!-- Menu card for Appetizers -->
+        <article class="menu-card" id="appetizers">
+          <h2 class="foodsectioncatagorie">Appetizers</h2>
+          <ul>
+            <li><b>Chicken Wings (6)</b> - $7.59</li>
+            <li>
+              Your choice of: Cajun, Electric Honey, Frank's Hot, Honey Garlic,
+              Lemon Pepper, Montreal Steak Spice, Salt n' Pepper, Southwest
+              Chipotle, Thai Sweet Chili, or Teriyaki
+            </li>
+            <li><b>Potato Wedges</b> - $3.79</li>
+            <li>
+              Crispy wedges cooked to a golden brown, served with a light
+              seasoning
+            </li>
+            <li><b>Torpedo Shrimp</b> - $6.70</li>
+            <li>
+              Coated in a golden, crunchy breading served with a side of seafood
+              sauce - 8 pieces
+            </li>
+            <li><b>Deep Fried Pickles</b> - $5.36</li>
+            <li>Cooked to a golden brown and served with spicy ranch</li>
+            <li><b>Mini Perogie Bites</b> - $5.36</li>
+            <li>
+              Bite size potato perogies deep fried and served with spicy ranch
+            </li>
+            <li><b>Mac N Cheese Bites</b> - $5.36</li>
+            <li>
+              Mac N cheese bites covered in a light breading and deep fried,
+              served with BBQ sauce
+            </li>
+            <li><b>Jalapeno Poppers</b> - $6.70</li>
+            <li>
+              Jalapeno pepper halves filled with rich cream cheese dipped in a
+              light potato breading; served with salsa - 6 pieces
+            </li>
+            <li><b>Veggie Spring Rolls</b> - $5.80</li>
+            <li>
+              A thin crispy wrapper generously stuffed with cabbage, carrots,
+              green beans, water chestnuts, green peas, corn & onions; served
+              with plum sauce - 6 pieces
+            </li>
+          </ul>
+        </article>
+
+        <!-- Menu card for Breakfast -->
+        <article class="menu-card">
+          <h2 class="foodsectioncatagorie">Breakfast</h2>
+          <ul>
+            <li><b>Bagel</b> - $1.79</li>
+            <li><b>Cream Cheese</b> - $0.67</li>
+            <li><b>Muffin</b> - $2.01</li>
+            <li><b>Banana Bread</b> - $1.34</li>
+            <li><b>Buttertart</b> - $1.34</li>
+            <li><b>Pastry</b> - $1.34</li>
+          </ul>
+        </article>
+
+        <!-- Menu card for Meals -->
+        <article class="menu-card" id="meals">
+          <h2 class="foodsectioncatagorie">Meals</h2>
+          <ul>
+            <li>
+              <b>Make it a full meal</b>: Add Fries for $2.68, or Onion Rings,
+              Potato Wedges, Kettle Chips, Tator Tots for $3.13
+            </li>
+            <li><b>Chicken Burger</b> - $3.57</li>
+            <li>
+              Breaded chicken patty served with crisp lettuce & mayo on a
+              lightly toasted bun
+            </li>
+            <li><b>Chicken Fingers</b> - $5.80</li>
+            <li>
+              Crispy chicken strips in a seasoned breading served with your
+              choice of dipping sauce
+            </li>
+            <li><b>Buffalo Chicken Bites</b> - $6.70</li>
+            <li>
+              Spicy chicken bites served with our in home-style dipping sauce
+            </li>
+            <li><b>Hot Dog</b> - $2.46</li>
+            <li>
+              Naturally smoked 100% beef, with your choice of condiments. Add
+              bacon for .90¢
+            </li>
+            <li><b>Cheese Dog</b> - $2.90</li>
+            <li>
+              Naturally smoked 100% beef, topped with our zesty jalapeno cheese
+              sauce.
+            </li>
+            <li><b>Hamburger</b> - $3.79</li>
+            <li>
+              100% beef, with your choice of condiments. Add cheese for .90¢,
+              Add bacon for .90¢
+            </li>
+            <li><b>Potato & Cheddar Perogies</b> - $5.36</li>
+            <li>
+              Hand made with filling of mashed potatoes, onion, and Bothwell
+              medium cheddar cheese served with sour cream
+            </li>
+          </ul>
+        </article>
+
+        <!-- Menu card for lighter side options -->
+        <article class="menu-card" id="side">
+          <h2 class="foodsectioncatagorie">On the Lighter Side</h2>
+          <ul>
+            <li><b>French Fries</b> - $3.13</li>
+            <li><b>Onion Rings</b> - $3.25</li>
+            <li><b>Kettle Chips</b> - $3.79</li>
+            <li><b>Tator Tots</b> - $3.79</li>
+            <li><b>Poutine</b> - $5.36</li>
+            <li><b>Gravy</b> - $1.11</li>
+            <li><b>Noodle Time Soup Bowl</b> - $2.23</li>
+            <li><b>Kraft Dinner Cup</b> - $2.23</li>
+            <li><b>Mini Donuts</b> - $4.02</li>
+            <li><b>Popcorn</b> - Small $1.34 / Large $2.01</li>
+            <li><b>Nachos & Cheese</b> - $2.90</li>
+            <li><b>Potato Chips/Chocolate Bars</b> - $1.11</li>
+          </ul>
+        </article>
+
+        <!-- Menu card for More options coming soon -->
+        <article class="menu-card">
+          <h2 class="foodsectioncatagorie">More Options Coming Soon</h2>
+          <p>Stay tuned for new menu items and exciting additions!</p>
+        </article>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Instagram and Facebook Section -->
+    <!--This likes the socials and gives credit for the images.-->
+    <section class="instagram">
+      <div class="container">
+        <div>
+          <p>Follow us on Instagram:</p>
+          <a
+            href="https://www.instagram.com/thegolfdome/?hl=en"
+            target="_blank">
+            <img
+              class="social-icon"
+              src="https://static.xx.fbcdn.net/rsrc.php/v4/yx/r/tBxa1IFcTQH.png"
+              alt="Instagram" />
+          </a>
+        </div>
+        <div>
+          <p>Follow us on Facebook:</p>
+          <a
+            href="https://www.facebook.com/people/The-Golf-Dome-Ltd/100064137847841/"
+            target="_blank">
+            <img
+              class="social-icon"
+              src="https://www.thegolfdome.ca/images/facebook.jpg"
+              alt="Facebook" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Golf Dome. All rights reserved. Based off of the Golf Dome
+          website:
+          <a
+            href="https://www.thegolfdome.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://www.thegolfdome.ca/</a
+          >
+        </p>
+        <p>Image Sources:</p>
+        <ul>
+          <li>
+            <a
+              href="https://images.pexels.com/photos/1556688/pexels-photo-1556688.jpeg"
+              target="_blank"
+              >Burger Section Background Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://static.xx.fbcdn.net/rsrc.php/v4/yx/r/tBxa1IFcTQH.png"
+              target="_blank"
+              >Instagram Icon Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.thegolfdome.ca/images/facebook.jpg"
+              target="_blank"
+              >Facebook Icon Image</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
